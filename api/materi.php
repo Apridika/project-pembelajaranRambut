@@ -21,28 +21,7 @@
 </head>
 <body class="bg-kremBg min-h-screen text-gray-800 font-sans">
 
-    <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-        <div class="flex items-center space-x-8">
-            <button class="flex flex-col space-y-1.5 focus:outline-none md:hidden">
-                <span class="w-6 h-0.5 bg-black"></span>
-                <span class="w-6 h-0.5 bg-black"></span>
-                <span class="w-6 h-0.5 bg-black"></span>
-            </button>
-            
-            <div class="hidden md:flex items-center space-x-8 font-medium">
-                <a href="index.php" class="text-gray-500 hover:text-black transition">Home</a>
-                <a href="materi.php" class="text-black font-bold">Materi</a>
-                <a href="video.php" class="text-gray-500 hover:text-black transition text-center leading-tight">Video Pembelajaran</a>
-                <a href="kelas.php" class="text-gray-500 hover:text-black transition">Ruang Kelas</a>
-                <a href="karya.php" class="text-gray-500 hover:text-black transition">Karya Siswa</a>
-            </div>
-        </div>
-
-        <div class="flex items-center space-x-4">
-            <a href="#" class="border border-black text-black px-6 py-2 rounded-full font-medium hover:bg-black hover:text-white transition">Masuk</a>
-            <a href="#" class="bg-coralPink text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition">Daftar</a>
-        </div>
-    </nav>
+    <?php include '../components/navbar.php'; ?>
 
     <main class="max-w-7xl mx-auto px-6 py-12">
         <div class="text-center md:text-left mb-12">

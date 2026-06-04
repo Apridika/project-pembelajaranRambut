@@ -21,35 +21,7 @@
 </head>
 <body class="bg-kremBg min-h-screen text-gray-800 font-sans">
 
-    <!-- NAVIGATION BAR -->
-    <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-        <div class="flex items-center space-x-8">
-            <button class="flex flex-col space-y-1.5 focus:outline-none md:hidden">
-                <span class="w-6 h-0.5 bg-black"></span>
-                <span class="w-6 h-0.5 bg-black"></span>
-                <span class="w-6 h-0.5 bg-black"></span>
-            </button>
-            
-            <div class="hidden md:flex items-center space-x-8 font-medium">
-                <a href="index.php" class="text-gray-500 hover:text-black transition">Home</a>
-                <a href="materi.php" class="text-gray-500 hover:text-black transition">Materi</a>
-                <a href="video.php" class="text-gray-500 hover:text-black transition">Video Pembelajaran</a>
-                <a href="kelas.php" class="text-black font-bold">Ruang Kelas</a>
-                <a href="karya.php" class="text-gray-500 hover:text-black transition">Karya Siswa</a>
-            </div>
-        </div>
-
-        <!-- Profil Siswa (Simulasi setelah login) -->
-        <div class="flex items-center space-x-3">
-            <div class="text-right hidden sm:block">
-                <p class="text-sm font-semibold text-gray-900">Siti Rahma</p>
-                <p class="text-xs text-gray-500">Siswa (XII Tata Kecantikan)</p>
-            </div>
-            <div class="w-10 h-10 rounded-full bg-unguTua text-white flex items-center justify-center font-bold">
-                SR
-            </div>
-        </div>
-    </nav>
+    <?php include '../components/navbar.php'; ?>
 
     <!-- GOOGLE CLASSROOM TABS -->
     <div class="border-b border-gray-200 bg-white sticky top-0 z-10 shadow-sm">
