@@ -24,7 +24,7 @@
 
 <body class="bg-kremBg min-h-screen text-gray-800 font-sans">
 
-    <?php include '../components/navbar.php'; ?>
+    <?php include 'components/navbar.php'; ?>
 
     <header class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
@@ -58,40 +58,6 @@
             <div class="w-48 h-1.5 bg-gradient-to-r from-unguTua to-coralPink rounded-full"></div>
         </div>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            const sidebar = document.getElementById('mobile-menu');
-            const overlay = document.getElementById('menu-overlay');
-
-            // Animasi Tombol Hamburger jadi tombol Close (X)
-            const line1 = document.getElementById('line1');
-            const line2 = document.getElementById('line2');
-            const line3 = document.getElementById('line3');
-
-            if (sidebar.classList.contains('-translate-x-full')) {
-                // Buka Menu
-                sidebar.classList.remove('-translate-x-full');
-                overlay.classList.remove('hidden');
-                setTimeout(() => overlay.classList.add('opacity-100'), 10);
-
-                // Efek X pada hamburger
-                line1.classList.add('transform', 'rotate-45', 'translate-y-2');
-                line2.classList.add('opacity-0');
-                line3.classList.add('transform', '-rotate-45', '-translate-y-2');
-            } else {
-                // Tutup Menu
-                sidebar.classList.add('-translate-x-full');
-                overlay.classList.remove('opacity-100');
-                setTimeout(() => overlay.classList.add('hidden'), 300);
-
-                // Kembalikan hamburger ke semula
-                line1.classList.remove('transform', 'rotate-45', 'translate-y-2');
-                line2.classList.remove('opacity-0');
-                line3.classList.remove('transform', '-rotate-45', '-translate-y-2');
-            }
-        }
-    </script>
 
 </body>
 

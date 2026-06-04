@@ -21,7 +21,7 @@
 </head>
 <body class="bg-kremBg min-h-screen text-gray-800 font-sans">
 
-    <?php include '../components/navbar.php'; ?>
+    <?php include 'components/navbar.php'; ?>
 
     <!-- MAIN CONTENT -->
     <main class="max-w-7xl mx-auto px-6 py-12">

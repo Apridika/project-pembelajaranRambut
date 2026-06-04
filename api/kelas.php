@@ -21,7 +21,7 @@
 </head>
 <body class="bg-kremBg min-h-screen text-gray-800 font-sans">
 
-    <?php include '../components/navbar.php'; ?>
+    <?php include 'components/navbar.php'; ?>
 
     <!-- GOOGLE CLASSROOM TABS -->
     <div class="border-b border-gray-200 bg-white sticky top-0 z-10 shadow-sm">
