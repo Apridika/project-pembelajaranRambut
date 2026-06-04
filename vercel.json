@@ -1,12 +1,15 @@
 {
   "functions": {
-    "*.php": {
+    "api/*.php": {
       "runtime": "vercel-php@0.7.3"
     }
   },
   "routes": [
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/(.*).php", "dest": "/$1.php" },
-    { "src": "/(.*)", "dest": "/index.php" }
+    { "src": "/karya", "dest": "/api/karya.php" },
+    { "src": "/kelas", "dest": "/api/kelas.php" },
+    { "src": "/materi", "dest": "/api/materi.php" },
+    { "src": "/video", "dest": "/api/video.php" },
+    { "src": "/(.*)", "dest": "/api/index.php" }
   ]
 }
