@@ -6,10 +6,11 @@
   },
   "routes": [
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/karya", "dest": "/api/karya.php" },
-    { "src": "/kelas", "dest": "/api/kelas.php" },
-    { "src": "/materi", "dest": "/api/materi.php" },
-    { "src": "/video", "dest": "/api/video.php" },
+    { "src": "/index.php", "dest": "/api/index.php" },
+    { "src": "/karya.php", "dest": "/api/karya.php" },
+    { "src": "/kelas.php", "dest": "/api/kelas.php" },
+    { "src": "/materi.php", "dest": "/api/materi.php" },
+    { "src": "/video.php", "dest": "/api/video.php" },
     { "src": "/(.*)", "dest": "/api/index.php" }
   ]
 }
